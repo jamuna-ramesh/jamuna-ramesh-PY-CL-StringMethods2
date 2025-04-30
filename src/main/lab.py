@@ -8,7 +8,7 @@ def replace_characters(original_string, old_chars, new_chars):
     :param new_chars: The new characters to replace the old ones.
     :return: The string with replaced characters.
     """
-    return ""
+    return original_string.replace(old_chars,new_chars)
 
 def split_string(original_string, delimiter):
     """
@@ -19,7 +19,7 @@ def split_string(original_string, delimiter):
     :param delimiter: The delimiter used to split the string.
     :return: A list of substrings.
     """
-    return ""
+    return original_string.split(delimiter)
 
 def join_strings(string_list, separator):
     """
@@ -30,7 +30,7 @@ def join_strings(string_list, separator):
     :param separator: The separator used to join the strings.
     :return: The joined string.
     """
-    return ""
+    return separator.join(string_list)
 
 def count_occurrences(original_string, char):
     """
@@ -41,7 +41,7 @@ def count_occurrences(original_string, char):
     :param char: The character to count occurrences of.
     :return: The number of occurrences of the character in the string.
     """
-    return 0
+    return original_string.count(char)
 
 def find_char_index(original_string, char):
     """
@@ -54,7 +54,7 @@ def find_char_index(original_string, char):
     :return: The index of the first occurrence of the character within the string, or -1 if not found.
     """
     try:
-        return 0
+        return original_string.index(char)
     except ValueError:
         return -1
 
@@ -67,7 +67,7 @@ def starts_with_substring(original_string, substring):
     :param substring: The substring to check.
     :return: True if the string starts with the substring, False otherwise.
     """
-    return ""
+    return original_string.startswith(substring)
 
 def ends_with_substring(original_string, substring):
     """
@@ -78,4 +78,4 @@ def ends_with_substring(original_string, substring):
     :param substring: The substring to check.
     :return: True if the string ends with the substring, False otherwise.
     """
-    return ""
+    return original_string.endswith(substring)
